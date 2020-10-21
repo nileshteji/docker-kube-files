@@ -1,0 +1,17 @@
+version: '3'
+services:
+    website:
+        image: 'nginx:nilesh'
+        ports:
+            - '80:80'
+        volumes:
+            -  .:/nilesh
+    nilesh :
+       image: 'nginx:nilesh'
+       ports:
+            - '8080:80'
+       volumes:
+          - .:/usr/share/nginx/html
+
+
+ 
